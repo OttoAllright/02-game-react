@@ -5,7 +5,7 @@ import { TURNS} from './constants.js';
 import { checkWinnerFrom, checkEndGame } from './logic/board.js';
 import { WinnerModal } from './components/WinnerModal.jsx';
 
-const URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:3000"; // Use environment variable or fallback to localhost
+const URL = import.meta.env.VITE_BACKEND_URL; // Use environment variable or fallback to localhost
 
 function App() {
   const [board, setBoard] = useState(Array(9).fill(null));
